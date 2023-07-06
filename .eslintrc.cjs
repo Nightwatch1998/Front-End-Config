@@ -25,7 +25,8 @@ module.exports = {
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module",
-        "project": "./tsconfig.json" // 项目配置文件路径
+        // "project": "./tsconfig.json" // 项目配置文件路径
+        "project": "./tsconfig.eslint.json" // 添加了测试之后，项目配置文件路径
     },
     "rules": {
         'prettier/prettier': 'error'

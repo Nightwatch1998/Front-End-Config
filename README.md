@@ -59,8 +59,35 @@ npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
 node node_modules/husky/lib/bin add .husky/commit-msg "npx --no-install commitlint --edit \"$1\""
 ```
 
+*Angular 规范说明：*
 
+- *feat*：新功能
+- *fix*：修补 BUG
+- *docs*：修改文档，比如 README, CHANGELOG, CONTRIBUTE 等等
+- *style*：不改变代码逻辑 (仅仅修改了空格、格式缩进、逗号等等)
+- *refactor*：重构（既不修复错误也不添加功能）
+- *perf*：优化相关，比如提升性能、体验
+- *test*：增加测试，包括单元测试、集成测试等
+- *build*：构建系统或外部依赖项的更改
+- *ci*：自动化流程配置或脚本修改
+- *chore*：非 src 和 test 的修改，发布版本等
+- *revert*：恢复先前的提交
 
 ## Jest
+
+测试模块
+
+```
+// 安装jest、类型声明文件、以及相关依赖
+npm i jest @types/jest ts-node@9.1.1 ts-jest -D
+// 初始化配置文件
+npx jest --init
+```
+
+修改jest.config.ts文件
+
+```
+ preset: 'ts-jest'
+```
 
 ## Github Actions
