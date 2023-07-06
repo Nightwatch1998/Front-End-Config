@@ -3,3 +3,4 @@ const calc = (a: number, b: number): number => {
 }
 
 // console.log(calc(1024, 28))
+// console.log(calc(1024, 28))

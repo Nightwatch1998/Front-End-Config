@@ -31,6 +31,8 @@ npm i eslint-config-prettier^8.8.0 eslint-plugin-prettier^5.0.0-alpha.1 -D
 
 ## Husky
 
+在git提交前后自动执行一些脚本，例如代码检查
+
 ```
 npm i husky -D
 npx husky install
