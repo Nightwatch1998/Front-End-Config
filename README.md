@@ -38,7 +38,8 @@ npm i husky -D
 npx husky install
 // 添加钩子
 npx husky add .husky/pre-commit "npm run lint" 
-
+// windows系统
+node node_modules/husky/lib/bin add .husky/pre-commit "npm run lint"
 ```
 
 
