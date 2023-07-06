@@ -90,4 +90,25 @@ npx jest --init
  preset: 'ts-jest'
 ```
 
-## Github Actions
+给`__tests__`目录也加上`lint`校验
+
+```
+"lint": "eslint src __tests__ --ext .js,.ts --cache --fix",
+```
+
+新建一个`tsconfig.eslint.json`文件，写入以下内容：
+
+```
+{
+  "extends": "./tsconfig.json",
+  "include": ["**/*.ts", "**/*.js"]
+}
+```
+
+
+
+## Github Actions（后面补充）
+
+通过github actions 实现代码合并或推送到主分支，会自动触发测试和发布版本等一系列流程
+
+[参考文章](https://juejin.cn/post/6971812117993226248#heading-10)
